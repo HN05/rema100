@@ -16,8 +16,8 @@ export default function Home() {
 	const [isPride, setIsPride] = useState(false)
 
 	useEffect(() => {
-		const shouldBeFrog = Math.random() < 1 / 15
-		const shouldBePride = shouldBeFrog && Math.random() < 1 / 8
+		const shouldBeFrog = Math.random() < 1 / 10
+		const shouldBePride = shouldBeFrog && Math.random() < 1 / 4
 		setIsFrog(shouldBeFrog)
 		setIsPride(shouldBePride)
 	}, [])
